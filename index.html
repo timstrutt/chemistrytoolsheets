@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!--  ******************************************************************************
+   File:    index.html
+   Purpose: Main index file for timstrutt.com ChemistryToolSheets website
+   Author:  Tim Strutt
+   Styles:  style.css;
+   colors:     #512da8 (dark violet);
+   background: #f2f2f2 (light gray);
+   fonts:      16px; 12px
+   Created: 2022-11-20
+   Edited:  2022-12-01
+   ******************************************************************************* -->
+   
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Chemical Analysis: Method Uncertainty (MU) spreadsheets using Grubbs' Test & Horwitz Ratio (HorRat); and Solvent/water extraction recovery efficiency model." />
+            <meta name="author" content="Tim Strutt" />
+            <link rel="stylesheet" type="text/css" href="style.css" />
+            <link rel="icon" type="image/x-icon" href="favicon.ico" />
+            <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico" />
+            <title>Tim Strutt - Tools for Analytical Chemists</title>
+         </head>
+   <body>
+      <!-- Main Page Header -->
+      <header class="ScriptHeader">
+         <div class="rt-container">
+            <div class="col-rt-12">
+               <div class="rt-heading">
+                  <img src="benzene.png" alt = alt="Benzene Molecule" title="Benzene Molecule - Benzene is a common pollutant." align="left";height="65" width="65">
+                     <h1>Tim Strutt - Analytical Chemistry Tool Sheets</h1>
+                     <h2>Free Microsoft Excel and Apple Notes Spreadsheets</h2>
+               </div>
+            </div>
+         </div>
+      </header>
+      
+      <!-- Main Page Text -->
+      <section>
+         <div class="rt-container">
+            <div class="col-rt-12">
+               <div class="top-section">
+                  <!-- Overview -->
+                  <p>I have been a volunteer ISO17025 technical assessor for a national accreditation authority for 30 years. I use an iPad, and made these tools to help me.
+                  </p>
+                  <!-- MU and Horwitz -Grubbs' -->
+                  <p>ISO/IEC 17025:2017 requires Measurement Uncertainty (MU) of chemical test results to be available - Particularly when developing new methods or for "novel" analytes and matrices. MUs can be determined by using sample blanks, spikes, and comparisons with reference materials. Sample "Low Spikes" could be used to determine Recoveries and Method Detection Limits. Spikes can be used to establish MUs at different concentrations with different matrices. I often use Grubbs' test and the Horwitz Ratio (HorRat) as initial assessment criteria. These are included in the first two spreadsheets below:-
+                  </p>
+                  <p>The 'Multiple Analytes MU' spreadsheet can be used for >20 results for each of 20 analytes in a test. Concentrations range from parts-per-trillion to 10%.
+                  <br/>The 'Single Analyte Report' is for one analyte, but also includes a printable "Summary Report"s that can be sent to a customer or archived.
+                  </p>
+                  <hr> <!--Thin Line -->
+                  <!-- Sample Solvent Extraction -->
+                  <p>The 'Sample Extraction' spreadsheet may be useful for the investigation of analytes in aqueous and solid materials in food and environmental samples - Including to prototype extraction methods for new analytes and to modify methods to improve their performance for a range of analytes. Several important published methods are included. A particular aim is to help reduce the use of chlorinated solvents by some older methods ("Green Chemistry").
+                  <br/>Likely efficiencies can be compared using different solvents and amounts for similar matrices.
+                  <p>
+                  </p>
+                  </p>
+                  <hr> <!--Thin Line -->
+               </div>
+               
+               <!-- Selectable Tabs and Content - Uses 5 Radio buttons with a default -->
+               <div class="tab-wrap">
+                  <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+                     <label for="tab1">Multiple Analytes MU</label>
+      
+                  <input type="radio" id="tab2" name="tabGroup1" class="tab">
+                     <label for="tab2">Single Analyte Report</label>
+                        
+                  <input type="radio" id="tab3" name="tabGroup1" class="tab">
+                     <label for="tab3">Sample Extraction</label>
+                           
+                  <input type="radio" id="tab4" name="tabGroup1" class="tab">
+                     <label for="tab4">About This Site</label>
+                              
+                  <input type="radio" id="tab5" name="tabGroup1" class="tab">
+                     <label for="tab5">About Me</label>
+                                 
+                        <div class="tab__content">
+                           <!-- Multiple Analytes MU -->
+                           <p>This spreadsheet may be useful to assist Laboratory Analysts and Assessors to investigate Recoveries, Relative Standard Deviations (RSD), Bias, Method Detection Limits (MDL), Practical Quantitation limits (PLQ), and Results "Corrected for Recovery" for a number of analytes within a Test.
+                                    
+                           <br/>It uses only "Cell Functions" (No code, macros, or hyperlinks) - So should be “Safe” to distribute...
+                           </p>
+                              <a onclick="window.open" href="pdfs/ReadMe_MultiAnalytesMU.pdf" target="page1">
+                                 <button>Open ReadMe PDF in new Window</button></a>
+                                    
+                              <a href='excel/MultiAnalytesMU.xlsx' download="Multi1">
+                                 <button type="button" >Download Multi Spreadsheet</button></a>
+                                    
+                              <a href='apple/MultiAnalytesMU.numbers' download="Multi2">
+                                 <button type="button" >Download Apple Version</button></a>
+                        </div>
+                                 
+                        <div class="tab__content">
+                           <!-- Single Analyte Report -->
+                           <p>This spreadsheet may be used to print reports for Recoveries, Relative Standard Deviations (RSD), Bias, Method Detection Limits (MDL), Practical Quantitation limits (PLQ), and Results "Corrected for Recovery" for a single analyte within a Test. It has a statement of satisfactory performance.
+                           </p>
+                              <a onclick="window.open" href="pdfs/ReadMe_SingleAnalyteMU.pdf" target="page2">
+                                 <button>Open ReadMe PDF in new Window</button></a>
+                                    
+                              <a href='excel/SingleAnalyteMU.xlsx' download="Single1">
+                                 <button type="button" >Download Single MU Spreadsheet</button></a>
+                                    
+                              <a href='apple/SingleAnalyteMU.numbers' download="Single2">
+                                 <button type="button" >Download Apple Version</button></a>
+                        </div>
+                                 
+                        <div class="tab__content">
+                           <!-- Sample Extraction -->
+                           <p>This spreadsheet indicates likely extraction efficiencies for a range of analytes, based on the standard "aqueous" USEPA Methods 3510 and 3511. Relative performances for environmental and foods methods like USEPA 3540, ISO 16703, and QuEChERS can be inferred for different solvents.
+                           </p>
+                           <p>Solvent densities ρ, boiling points, water miscibilities/solubilities, and LogP partition coefficients for a range of solvents including: dichloromethane, n-octanol (LogKow), hexane, pentane, toluene, carbon disulfide, ether, ethyl acetate, acetone, acetonitrile, and methanol are shown. "Fine Tuning" is possible by using mixed solvents with different polarities and different solvent/matrix amounts for extraction. Detailed Notes are in the last sheet.
+                           </p>
+                              <a onclick="window.open" href="pdfs/ReadMe_SampleExtraction.pdf" target="page3">
+                                 <button>Open ReadMe PDF in new Window</button></a>
+                                    
+                              <a href='excel/SampleExtraction.xlsx' download="Extract1">
+                                 <button type="button" >Download Extraction Spreadsheet</button></a>
+                                    
+                              <a href='apple/SampleExtraction.numbers' download="Extract2">
+                                 <button type="button" >Download Apple Version</button></a>
+                        </div>
+                                 
+                        <div class="tab__content">
+                           <!-- About This Site -->
+                           <p>I created my previous website over 15 years ago. Many things have changed since then!
+                           <br/>This is a simple one-page tabbed site constructed with standard non-commercial elements:-
+                           <img  src="caffeine.png"
+                                 alt="Caffeine Molecule" title="Caffeine Molecule"
+                                 align="right";height="150" width="150">
+                           <ul style="list-style-type:none">
+                              <li>It uses HTML5 markup language with CSS only (No programming languages like JavaScript).
+                              <li>All elements (like PDF files and spreadsheets) are self-contained within this site.
+                              <li>No external fonts - CSS Fallback Fonts only (in this case, Helvetica and Arial).
+                              <li>No clickable links like [ linkedin.com.com ]. To go there, copy content and paste into your browser.
+                              </ul>
+                           </p>
+                           <p>[ timstrutt.com ] is currently hosted by CloudFlare - Published at https://gist.github.com/timstrutt (Public Site).
+                           </p>
+                        </div>
+                                 
+                        <div class="tab__content">
+                           <!-- About Me -->
+                           <p>Before retiring I worked in chemistry and computing. I'm a Chartered Chemist and  interested in chemical analysis, particularly chromatography and mass spectrometry. My jobs included: research chemist, forensic scientist, toxicologist, environmental chemist, and computer advisor - Computer projects included writing Laboratory Information Management Systems (LIMS), specialist technical and financial systems, and heritage management.
+                           <br/>I am on Linkedin  [ https://au.linkedin.com/in/timstrutt ] and ResearchGate [ https://www.researchgate.net/profile/Tim-Strutt ].
+                           <br/> <font style="color: #512da8" >All of my current projects (including work on this web site) are on a voluntary "pro bono" basis</font>.
+                           <br/>
+                           </p>
+                           <p>To contact me use [webmail] at [timstrutt.com] or the Email button.
+                           <br/>
+                           </p>
+                                    
+                           <!-- Change email address if it gets spammed, escape code might make it safer -->
+                           <form action="mailto: webmail&#064timstrutt.com">
+                              <input type="submit" Style="color: #1c1c1d;
+                                                         background-color: #f2f2f2;
+                                                         border: none;
+                                                         padding: 15px 32px;
+                                                         text-align: center;
+                                                         text-decoration: none;
+                                                         display: inline-block;
+                                                         font-size: 16px;
+                                                         margin: 4px 2px;
+                                    "value="Email Me">
+                           </form>
+                        </div>
+                  </div>
+            </section>
+   </body>
+</html>
+
