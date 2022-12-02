@@ -1,4 +1,5 @@
 # ChemistryToolSheets
+---
 
 A simple website to display or download spreadsheets, and their associated PDF files.
 
@@ -41,5 +42,4 @@ Initial Release 2022-12-01
 This project is licensed under the Boost Software License - see the LICENSE file for details.
 
 ## Acknowledgments
-I acknowledge Muhammad Asif of https://codeconvey.com for the "Simple CSS Tabs" concept. 
-Otherwise I would have used a tedious "open pages in a single frame" technique... 
+See acknowledgements file in this directory
