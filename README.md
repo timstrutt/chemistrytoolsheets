@@ -35,8 +35,14 @@ Designed for an iPad - Should also work with an Intel or Silicon processor Mac, 
 ## Author
 Tim Strutt
 
+## Host
+Hosted by Cloudflare
+- [Website] (https://www.timstrutt.com "Full address required: www.timstrutt.com")
+
+
 ## Version History
 Initial Release 2022-12-01
+This Release    2022-12-03
 
 ## License
 This project is licensed under the Boost Software License - see the LICENSE file for details.
