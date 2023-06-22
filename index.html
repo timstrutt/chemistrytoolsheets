@@ -9,7 +9,7 @@
    background: #f2f2f2 (light gray);
    fonts:      16px; 12px
    Created: 2022-11-20
-   Edited:  2022-12-01
+   Edited:  2023-06-22
    ******************************************************************************* -->
    
    <head>
@@ -63,13 +63,13 @@
                   <hr> <!--Thin Line -->
                </div>
                
-               <!-- Selectable Tabs and Content - Uses 5 Radio buttons with a default -->
+               <!-- Selectable Tabs and Content - Uses 5 Radio buttons with a default "checked" -->
                <div class="tab-wrap">
-                  <input type="radio" id="tab2" name="tabGroup1" class="tab">
-                     <label for="tab2">Single Analyte Report</label>
-                     
                   <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-                     <label for="tab1">Multiple Analytes MU</label>
+                     <label for="tab1">Single Analyte Report</label>
+                     
+                  <input type="radio" id="tab2" name="tabGroup1" class="tab">
+                     <label for="tab2">Multiple Analytes MU</label>
                         
                   <input type="radio" id="tab3" name="tabGroup1" class="tab">
                      <label for="tab3">Sample Extraction</label>
@@ -85,6 +85,8 @@
                            <!-- Single Analyte Report -->
                            <p>
                            <br/>This spreadsheet may be used to print reports for Recoveries, Relative Standard Deviations (RSD), Bias, Method Detection Limits (MDL), Practical Quantitation limits (PLQ), and Results "Corrected for Recovery" for a single analyte within a Test. It has a statement of satisfactory performance.
+                           
+                           <br/>It uses only "Cell Functions" (No code, macros, or hyperlinks) - So should be “Safe” to distribute...
                            <br/>
                            <br/>
                            </p>
@@ -101,7 +103,9 @@
                         
                         <div class="tab__content">
                            <!-- Multiple Analytes MU -->
-                           <p>This spreadsheet may be useful to assist Laboratory Analysts and Assessors to investigate Recoveries, Relative Standard Deviations (RSD), Bias, Method Detection Limits (MDL), Practical Quantitation limits (PLQ), and Results "Corrected for Recovery" for a number of analytes within a Test.
+                           <p>
+                           <br/>This spreadsheet may be useful to assist Laboratory Analysts and Assessors to investigate Recoveries, Relative Standard Deviations (RSD), Bias, Method
+                              Detection Limits (MDL), Practical Quantitation limits (PLQ), and Results "Corrected for Recovery" for a number of analytes within a Test.
                                     
                            <br/>It uses only "Cell Functions" (No code, macros, or hyperlinks) - So should be “Safe” to distribute...
                            <br/>
