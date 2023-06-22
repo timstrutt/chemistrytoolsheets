@@ -48,8 +48,10 @@
                   <!-- MU and Horwitz -Grubbs' -->
                   <p>ISO/IEC 17025:2017 requires Measurement Uncertainty (MU) of chemical test results to be available - Particularly when developing new methods or for "novel" analytes and matrices. MUs can be determined by using sample blanks, spikes, and comparisons with reference materials. Sample "Low Spikes" could be used to determine Recoveries and Method Detection Limits. Spikes can be used to establish MUs at different concentrations with different matrices. I often use Grubbs' test and the Horwitz Ratio (HorRat) as initial assessment criteria. These are included in the first two spreadsheets below:-
                   </p>
-                  <p>The 'Multiple Analytes MU' spreadsheet can be used for >20 results for each of 20 analytes in a test. Concentrations range from parts-per-trillion to 10%.
-                  <br/>The 'Single Analyte Report' is for one analyte, but also includes a printable "Summary Report" that can be sent to a customer or archived.
+                  <p>The 'Single Analyte Report' is for one analyte at one concentration, and includes a printable "Summary Report" that can be sent to a customer or archived.
+                  <p/>
+                  <p>The 'Multiple Analytes MU' spreadsheet is similar and can be used for up to 32 results for each of 24 analytes with the same concentration units.
+                       It can be used with tests that produce a lot of results, like ICP-OES and GC-MS etc. Concentrations range from parts-per-trillion to 10%.
                   </p>
                   <hr> <!--Thin Line -->
                   <!-- Sample Solvent Extraction -->
@@ -77,26 +79,14 @@
                               
                   <input type="radio" id="tab5" name="tabGroup1" class="tab">
                      <label for="tab5">About Me</label>
-                                 
-                        <div class="tab__content">
-                           <!-- Multiple Analytes MU -->
-                           <p>This spreadsheet may be useful to assist Laboratory Analysts and Assessors to investigate Recoveries, Relative Standard Deviations (RSD), Bias, Method Detection Limits (MDL), Practical Quantitation limits (PLQ), and Results "Corrected for Recovery" for a number of analytes within a Test.
-                                    
-                           <br/>It uses only "Cell Functions" (No code, macros, or hyperlinks) - So should be “Safe” to distribute...
-                           </p>
-                              <a onclick="window.open" href="pdfs/ReadMe_MultiAnalytesMU.pdf" target="ReadMe_MultiAnalytesMU">
-                                 <button>Open ReadMe PDF in new Window</button></a>
-                                    
-                              <a href='excel/MultiAnalytesMU.xlsx' download="MultiAnalytesMU.xlsx">
-                                 <button type="button" >Download Multi Spreadsheet</button></a>
-                                    
-                              <a href='apple/MultiAnalytesMU.numbers' download="MultiAnalytesMU.numbers">
-                                 <button type="button" >Download Apple Version</button></a>
-                        </div>
-                                 
+                           
+                           
                         <div class="tab__content">
                            <!-- Single Analyte Report -->
-                           <p>This spreadsheet may be used to print reports for Recoveries, Relative Standard Deviations (RSD), Bias, Method Detection Limits (MDL), Practical Quantitation limits (PLQ), and Results "Corrected for Recovery" for a single analyte within a Test. It has a statement of satisfactory performance.
+                           <p>
+                           <br/>This spreadsheet may be used to print reports for Recoveries, Relative Standard Deviations (RSD), Bias, Method Detection Limits (MDL), Practical Quantitation limits (PLQ), and Results "Corrected for Recovery" for a single analyte within a Test. It has a statement of satisfactory performance.
+                           <br/>
+                           <br/>
                            </p>
                               <a onclick="window.open" href="pdfs/ReadMe_SingleAnalyteMU.pdf" target="ReadMe_SingleAnalyteMU">
                                  <button>Open ReadMe PDF in new Window</button></a>
@@ -107,13 +97,37 @@
                               <a href='apple/SingleAnalyteMU.numbers' download="SingleAnalyteMU.numbers">
                                  <button type="button" >Download Apple Version</button></a>
                         </div>
-                                 
+                        
+                        
+                        <div class="tab__content">
+                           <!-- Multiple Analytes MU -->
+                           <p>This spreadsheet may be useful to assist Laboratory Analysts and Assessors to investigate Recoveries, Relative Standard Deviations (RSD), Bias, Method Detection Limits (MDL), Practical Quantitation limits (PLQ), and Results "Corrected for Recovery" for a number of analytes within a Test.
+                                    
+                           <br/>It uses only "Cell Functions" (No code, macros, or hyperlinks) - So should be “Safe” to distribute...
+                           <br/>
+                           <br/>
+                           </p>
+                              <a onclick="window.open" href="pdfs/ReadMe_MultiAnalytesMU.pdf" target="ReadMe_MultiAnalytesMU">
+                                 <button>Open ReadMe PDF in new Window</button></a>
+                                    
+                              <a href='excel/MultiAnalytesMU.xlsx' download="MultiAnalytesMU.xlsx">
+                                 <button type="button" >Download Multi Spreadsheet</button></a>
+                                    
+                              <a href='apple/MultiAnalytesMU.numbers' download="MultiAnalytesMU.numbers">
+                                 <button type="button" >Download Apple Version</button></a>
+                        </div>
+                     
+                     
                         <div class="tab__content">
                            <!-- Sample Extraction -->
                            <p>This spreadsheet indicates likely extraction efficiencies for a range of analytes, based on the standard "aqueous" USEPA Methods 3510 and 3511. Relative performances for environmental and foods methods like USEPA 3540, ISO 16703, and QuEChERS can be inferred for different solvents.
+                           <br/>
+                              Solvent densities ρ, boiling points, water miscibilities/solubilities, and LogP partition coefficients for a range of solvents including:
+                              dichloromethane, n-octanol (LogKow), hexane, pentane, toluene, carbon disulfide, ether, ethyl acetate, acetone, acetonitrile, and methanol are shown.
+                              "Fine Tuning" is possible by using mixed solvents with different polarities and different solvent/matrix amounts for extraction. Detailed Notes are in
+                              the last sheet.
                            </p>
-                           <p>Solvent densities ρ, boiling points, water miscibilities/solubilities, and LogP partition coefficients for a range of solvents including: dichloromethane, n-octanol (LogKow), hexane, pentane, toluene, carbon disulfide, ether, ethyl acetate, acetone, acetonitrile, and methanol are shown. "Fine Tuning" is possible by using mixed solvents with different polarities and different solvent/matrix amounts for extraction. Detailed Notes are in the last sheet.
-                           </p>
+                           <br/>
                               <a onclick="window.open" href="pdfs/ReadMe_SampleExtraction.pdf" target="ReadMe_SampleExtraction">
                                  <button>Open ReadMe PDF in new Window</button></a>
                                     
@@ -138,7 +152,7 @@
                               <li>No clickable links like [ linkedin.com ]. To go there, copy content and paste into your browser.
                               </ul>
                            </p>
-                           <p>[ timstrutt.com ] is currently hosted by CloudFlare - Published at https://github.com/timstrutt [20221203].
+                           <p>[ timstrutt.com ] is currently hosted by CloudFlare - Uploaded to: https://github.com/timstrutt [20230622].
                            </p>
                         </div>
                                  
@@ -149,10 +163,7 @@
                            <br/> <font style="color: #512da8" >All of my current projects (including work on this web site) are on a voluntary "pro bono" basis</font>.
                            <br/>
                            </p>
-                           <p>To contact me use: webmail at timstrutt.com  <!-- or the Email button. -->
-                           <br/>
-                           </p>
-                                    
+                           To contact me use: webmail at timstrutt.com  <!-- or the Email button. -->
                            <!-- Change email address if it gets spammed, escape code might make it safer -->
                            <form action="mailto: webmail&#064timstrutt.com">
                               <input type="submit" Style="color: #1c1c1d;
